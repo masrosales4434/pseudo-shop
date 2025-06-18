@@ -8,6 +8,7 @@
 	
 	for each product in product_list:
 		print "Product Name: " + product.name
+		print "Price" + product.price
 		print "Width: " + product.width
 		print "Height: " + product.height
 		print "Length: " + product.length
@@ -43,6 +44,7 @@ function filter_products(filters):
 			
 	for each product in filtered_list:
 		print "Product Name: " + product.name
+		print "Price" + product.price
 		print "Width: " + product.width
 		print "Height: " + product.height
 		print "Length: " + product.length
