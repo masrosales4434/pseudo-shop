@@ -33,4 +33,6 @@ function add_product():
 		Get Input for the attribute
 		Set the input as the new value for the attribute
 	
+	#After getting all attributes, add the product to the list
+	Append product in product list
 	
