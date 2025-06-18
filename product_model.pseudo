@@ -26,13 +26,27 @@ function add_product():
 		brand: ""
 	}
 	
-	#Iterate through each product attribute 
-	for each attribute in product:
-		print "Current product attribute"
-		print "Enter the new value for the product attribute"
-		Get Input for the attribute
-		Set the input as the new value for the attribute
+	flag = false
+	do
 	
-	#After getting all attributes, add the product to the list
+		#Iterate through each product attribute 
+		for each attribute in product:
+			print "Current product attribute"
+			print "Enter the new value for the product attribute"
+			Get Input for the attribute
+			Set the input as the new value for the attribute
+		
+		print product attributes
+		print "Are the details correct? yes | no"
+		
+		Get input for flag
+		if input == yes:
+			Set flag as true
+		else:
+			Set flag as false
+	while flag is false
+	
+	
+	#After getting all attributes and confirming, add the product to the list
 	Append product in product list
 	
