@@ -14,3 +14,23 @@
 # Placeholder product list
 product_list = []
 
+function add_product():
+	#Map the product into the desired structure
+	product = {
+		name: "",
+		width: "",
+		height: "",
+		length: "",
+		weight: "",
+		color: "",
+		brand: ""
+	}
+	
+	#Iterate through each product attribute 
+	for each attribute in product:
+		print "Current product attribute"
+		print "Enter the new value for the product attribute"
+		Get Input for the attribute
+		Set the input as the new value for the attribute
+	
+	
