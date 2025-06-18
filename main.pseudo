@@ -4,5 +4,64 @@
 # Feel free to modify this to simulate application flow
 
 # Run the app
-print "Welcome to the Pseudo Shop!"
+print "-----Welcome to the Pseudo Shop!-----"
 
+# Simulate sessions
+is_logged_in = false
+current_user = null
+
+function main():
+	loop = true
+	
+	while loop == true:
+	print "1. Register Account"
+	print "2. Login Account"
+	print "3. Add Products"
+	print "4. Display All Products"
+	print "5. Exit"
+	
+	print "Enter your choice: "
+	choice = Get input
+	
+	if choice == "1":
+		print "===User Registration==="
+		print "Enter username: "
+		name = Get input username
+		
+		print "Enter email address: "
+		email = Get input email
+		
+		print "Enter password: "
+		password = Get input password
+		
+		result = call user_controller.create_user(name, email, password)
+		print result 
+	
+	else if choice == "2":
+		print "===User Login==="
+		print "Enter email: "
+		email = Get input email
+		
+		print "Enter password: "
+		password = Get input password
+		
+		result = call user_controller.login_user(email, password)
+		
+		if result == "Login successful":
+			is_logged_in = true
+			current_user = email
+			print "You are now logged in as", current_user
+		else:
+			print result
+	
+	else if choice == "3":
+		print "===Add Products==="
+		if is_logged_in == true:
+			call product_model.add_product()
+		else:
+			print "Please log in to add product."
+		
+	else:
+		print "Invalid option. Please try again."
+		
+call main()
