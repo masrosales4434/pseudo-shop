@@ -1,17 +1,16 @@
 # Final Project Retrospective
 
 ## Team Members
-- Student 1:
-- Student 2:
+- Student 1: Marvin Andrew Rosales	
+- Student 2: Joana Tria
 
 ## 1. How did you divide the work between you and your partner?
-_(Who worked on which features? How was the work assigned or negotiated?)_
-
+_Marvin worked on features 1 and 3, while Joana worked on features 2 and 4. We decided to equally split the features and let each other decide on features that we want to work on._
 ## 2. What Git strategies or commands helped you most during the project?
-_(E.g., branching, rebasing, frequent commits, etc.)_
+_Frequent commits allowed us to track progress more efficiently. Furthermore, merging also helped us by addressing if there were any conflicts with each member's commits. Finally, branching was the most helpful because it allowed us to effectively collaborate by working simultaneously._
 
 ## 3. Describe a merge conflict you encountered. What caused it and how did you resolve it?
-_(Include any lessons learned or techniques used to resolve the issue.)_
+_We encountered a merge conflict wherein one could not push their changes because both parties edited the same line and function. A lack of communication caused it and we resolved it by effectively communicating through gspaces, compromising, and then fixing the commit._
 
 ## 4. What were the biggest challenges you faced as a team?
 _(This can include communication, Git usage, or coordination.)_

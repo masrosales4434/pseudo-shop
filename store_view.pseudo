@@ -1,12 +1,27 @@
 # Displays product listings
 
 # Placeholder function:
-# function display_products():
+function display_products():
+	set attributes = ["color", "brand", "width", "height", "length", "weight"]
+	filters = {}
+	
+	#Iterate through each attribute then ask for input for each one. Skip the attribute if user does not enter any input.
+	for each attribute in attributes:
+		print "_____________"
+		print "Filter by " + attribute + " (Press Enter if none): "
+		Get user input for each
+		
+		if input !+ "":
+			set filters.attribute = input
 	
 	#Access the product list from product_model.pseudo
 	set product_list = product_model.get_all_products()
 	
-	for each product in product_list:
+	#Call the filter products function
+	set filtered_list = filter_products(filters)
+	
+	#Display only the filtered products
+	for each product in filtered_list:
 		print "Product Name: " + product.name
 		print "Price" + product.price
 		print "Width: " + product.width
@@ -42,12 +57,4 @@ function filter_products(filters):
 		if flag:
 			append product to filtered_list
 			
-	for each product in filtered_list:
-		print "Product Name: " + product.name
-		print "Price" + product.price
-		print "Width: " + product.width
-		print "Height: " + product.height
-		print "Length: " + product.length
-		print "Weight: " + product.weight
-		print "Color: " + product.color
-		print "Brand: " + product.brand
+	return filtered_list
