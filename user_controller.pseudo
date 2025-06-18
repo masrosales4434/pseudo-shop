@@ -2,31 +2,34 @@
 
 # Placeholder function signatures:
 function create_user(name, email, password)
-	# 1: Validate user input
-	if not name, email, password:
+	# Step 1: Validate user input
+	if name is empty or email is empty or password is empty:
 		print "All fields are required."
 	
-	# check if email is in valid format
+	# Check if email is in valid format
 	if email not valid:
-		print "Please input correct email format."
+		print "Invalid email format. Please input correct email address."
 		
 	# check if password meets requirements
 	if length(password) < 8:
 		print "Password must contain at least 8 characters."
 		
-	# 2: Check if user exists in database
+	# Step 2: Check if user exists in database
 	if email in database:
 		print "Email address already exists in the system."
 		
-	# 3: Hash password
+	# Step 3: Hash password
 	hashed_password = hash_password(password)
 	
-	# 4: Create user
+	# Step 4: Create user
 	user = {
 		"username" : name,
 		"email" : email,
 		"password" : hashed_password
 	}
+	
+	# Step 5: Save user to database
+	database.save(user)
 	
 	return "User created successfully"
 	
