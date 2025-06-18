@@ -34,4 +34,24 @@ function create_user(name, email, password)
 	return "User created successfully"
 	
 # function login_user(email, password)
+	# Step 1: Validate user input
+	if email is empty or password is empty:
+		print "All fields are required."
+	
+	# Check if email is in valid format
+	if email not valid:
+		print "Invalid email format. Please input correct email address."
+		
+	# Step 2: Retrieve user from database
+	user = database.get(email)
+	
+	if user not in database:
+		print "User not found."
+	
+	# Step 3: Verify user password
+	if not verify_password(password, hashed_password)
+		print "Incorrect password."
+	
+	return "Login successful"
+	
 
