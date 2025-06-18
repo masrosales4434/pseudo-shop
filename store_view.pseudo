@@ -33,8 +33,8 @@ function filter_products(filters):
 		flag = true
 		
 		#Iterate through each attribute to find out if it matches with the product.
-		for each filter in filters:
-			if product.attribute != filters.attribute:
+		for each key in filters:
+			if product.key != filters.key:
 				set flag = false
 				break
 		
