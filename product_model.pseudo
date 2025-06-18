@@ -3,7 +3,7 @@
 # Sample structure:
 # product = {
 #     name: "Sample Product",
-#     product_price: "23"
+#     price: 99,
 #     width: 10,
 #     height: 5,
 #     length: 20,
@@ -19,7 +19,7 @@ function add_product():
 	#Map the product into the desired structure
 	product = {
 		name: "",
-		product_price: "",
+		price: "",
 		width: "",
 		height: "",
 		length: "",
