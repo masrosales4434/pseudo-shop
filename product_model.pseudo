@@ -49,4 +49,9 @@ function add_product():
 	
 	#After getting all attributes and confirming, add the product to the list
 	Append product in product list
+
+
+function get_all_products():
 	
+	#Return all products in product_list
+	return product_list
