@@ -14,3 +14,44 @@
 # Placeholder product list
 product_list = []
 
+function add_product():
+	#Map the product into the desired structure
+	product = {
+		name: "",
+		width: "",
+		height: "",
+		length: "",
+		weight: "",
+		color: "",
+		brand: ""
+	}
+	
+	flag = false
+	do
+	
+		#Iterate through each product attribute 
+		for each attribute in product:
+			print "Current product attribute"
+			print "Enter the new value for the product attribute"
+			Get Input for the attribute
+			Set the input as the new value for the attribute
+		
+		print product attributes
+		print "Are the details correct? yes | no"
+		
+		Get input for flag
+		if input == yes:
+			Set flag as true
+		else:
+			Set flag as false
+	while flag is false
+	
+	
+	#After getting all attributes and confirming, add the product to the list
+	Append product in product list
+
+
+function get_all_products():
+	
+	#Return all products in product_list
+	return product_list
