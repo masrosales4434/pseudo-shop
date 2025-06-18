@@ -14,3 +14,31 @@
 		print "Weight: " + product.weight
 		print "Color: " + product.color
 		print "Brand: " + product.brand
+		
+	
+		
+#Assume that filters is structured as:
+# filters = {
+#	...,
+#	color: "",
+#	brand: ""
+# }
+function filter_products(filters):
+	#Initializing the list
+	set filtered_list = []
+	
+	set product_list = product_model.get_all_products()
+	
+	for each product in product_list:
+		flag = true
+		
+		#Iterate through each attribute to find out if it matches with the product.
+		for each filter in filters:
+			if product.attribute != filters.attribute:
+				set flag = false
+				break
+		
+		if flag:
+			append product to filtered_list
+			
+	return filtered_list
