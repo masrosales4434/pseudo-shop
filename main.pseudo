@@ -53,6 +53,13 @@ function main():
 			print "You are now logged in as", current_user
 		else:
 			print result
+	
+	else if choice == "3":
+		print "===Add Products==="
+		if is_logged_in == true:
+			call product_model.add_product()
+		else:
+			print "Please log in to add product."
 		
 	else:
 		print "Invalid option. Please try again."
