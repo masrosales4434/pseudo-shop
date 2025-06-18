@@ -36,6 +36,23 @@ function main():
 		
 		result = call user_controller.create_user(name, email, password)
 		print result 
+	
+	else if choice == "2":
+		print "===User Login==="
+		print "Enter email: "
+		email = Get input email
+		
+		print "Enter password: "
+		password = Get input password
+		
+		result = call user_controller.login_user(email, password)
+		
+		if result == "Login successful":
+			is_logged_in = true
+			current_user = email
+			print "You are now logged in as", current_user
+		else:
+			print result
 		
 	else:
 		print "Invalid option. Please try again."
