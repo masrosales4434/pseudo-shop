@@ -60,6 +60,16 @@ function main():
 			call product_model.add_product()
 		else:
 			print "Please log in to add product."
+	
+	else if choice == "4":
+		# Outputs product name, price, and filtered attributes
+		
+		call store_view.display_products()
+	
+	else if choice == "5":
+		print "Exiting the Pseudo Shop! Thank you for shopping!"
+		loop = false
+		exit()
 		
 	else:
 		print "Invalid option. Please try again."
